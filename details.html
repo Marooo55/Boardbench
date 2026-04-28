@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deep dive into Arduino Uno — full specifications, advantages, disadvantages, and real-world use cases explained for beginners.">
+  <title>Arduino Uno — Details — BoardBench</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">⚡</span> BoardBench
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="comparisons.html">Comparisons</a></li>
+        <li><a href="details.html" class="active">Details</a></li>
+        <li><a href="Credit.html">Team</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================== -->
+    <!-- Product Hero                   -->
+    <!-- ============================== -->
+    <section class="product-hero" id="productHero">
+      <div class="product-hero__inner">
+
+        <!-- Product Image -->
+        <div class="product-hero__image" id="productImage">
+          <img src="arduino-uno.png" alt="Arduino Uno R3 microcontroller board — blue PCB with ATmega328P chip, USB-B connector, and pin headers">
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-hero__info">
+          <div class="product-hero__badge">🟢 Microcontroller Board</div>
+          <h1 class="product-hero__name">Arduino <span class="highlight">Uno</span> R3</h1>
+          <p class="product-hero__tagline">
+            The most popular board for learning electronics and embedded programming.
+            An open-source microcontroller built around the ATmega328P.
+          </p>
+          <div class="product-hero__price">
+            $20 – $27 <span>approx. retail</span>
+          </div>
+          <div class="product-hero__actions">
+            <a href="comparisons.html#mcu" class="btn btn--primary">Compare with Nano →</a>
+            <a href="comparisons.html" class="btn btn--outline">All Comparisons</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Full Specifications            -->
+    <!-- ============================== -->
+    <section class="specs-section" id="specs">
+      <div class="specs-section__inner">
+        <header class="section-header">
+          <p class="section-header__label">Technical Specs</p>
+          <h2 class="section-header__title">Full Specifications</h2>
+        </header>
+
+        <div class="specs-grid">
+          <div class="spec-card">
+            <p class="spec-card__label">Microcontroller</p>
+            <p class="spec-card__value">ATmega328P</p>
+            <p class="spec-card__note">8-bit AVR architecture</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Clock Speed</p>
+            <p class="spec-card__value">16 MHz</p>
+            <p class="spec-card__note">Crystal oscillator</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Flash Memory</p>
+            <p class="spec-card__value">32 KB</p>
+            <p class="spec-card__note">0.5 KB used by bootloader</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">SRAM</p>
+            <p class="spec-card__value">2 KB</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">EEPROM</p>
+            <p class="spec-card__value">1 KB</p>
+            <p class="spec-card__note">Non-volatile storage</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Digital I/O Pins</p>
+            <p class="spec-card__value">14</p>
+            <p class="spec-card__note">6 provide PWM output</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Analog Input Pins</p>
+            <p class="spec-card__value">6</p>
+            <p class="spec-card__note">10-bit ADC resolution</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Operating Voltage</p>
+            <p class="spec-card__value">5V</p>
+            <p class="spec-card__note">Input: 7–12V recommended</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">USB</p>
+            <p class="spec-card__value">Type-B</p>
+            <p class="spec-card__note">Programming & power</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Dimensions</p>
+            <p class="spec-card__value">68.6 × 53.4 mm</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Weight</p>
+            <p class="spec-card__value">25 g</p>
+          </div>
+          <div class="spec-card">
+            <p class="spec-card__label">Communication</p>
+            <p class="spec-card__value">UART, SPI, I²C</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Advantages / Disadvantages     -->
+    <!-- ============================== -->
+    <section class="proscons" id="proscons">
+      <div class="proscons__inner">
+        <header class="section-header">
+          <p class="section-header__label">Evaluation</p>
+          <h2 class="section-header__title">Advantages & Disadvantages</h2>
+        </header>
+
+        <div class="proscons__grid">
+
+          <!-- Advantages -->
+          <article class="proscons__card proscons__card--pros">
+            <h3 class="proscons__title proscons__title--pros">✅ Advantages</h3>
+            <ul class="proscons__list proscons__list--pros">
+              <li><span class="icon">+</span> Extremely beginner-friendly with massive community support</li>
+              <li><span class="icon">+</span> Huge library ecosystem — thousands of ready-made libraries</li>
+              <li><span class="icon">+</span> Shield-compatible (stackable expansion boards)</li>
+              <li><span class="icon">+</span> Open-source hardware and software — fully documented</li>
+              <li><span class="icon">+</span> Robust 5V logic — easy to interface with sensors and motors</li>
+              <li><span class="icon">+</span> Cross-platform IDE (Windows, Mac, Linux)</li>
+              <li><span class="icon">+</span> Affordable and widely available worldwide</li>
+            </ul>
+          </article>
+
+          <!-- Disadvantages -->
+          <article class="proscons__card proscons__card--cons">
+            <h3 class="proscons__title proscons__title--cons">❌ Disadvantages</h3>
+            <ul class="proscons__list proscons__list--cons">
+              <li><span class="icon">−</span> Limited memory (32 KB flash, 2 KB SRAM)</li>
+              <li><span class="icon">−</span> Slow 16 MHz clock — not suitable for heavy computation</li>
+              <li><span class="icon">−</span> No built-in Wi-Fi or Bluetooth connectivity</li>
+              <li><span class="icon">−</span> Relatively large form factor compared to Nano/Micro</li>
+              <li><span class="icon">−</span> Cannot run an operating system</li>
+              <li><span class="icon">−</span> Single-threaded — cannot multitask natively</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Real-World Use Cases           -->
+    <!-- ============================== -->
+    <section class="usecases" id="usecases">
+      <div class="usecases__inner">
+        <header class="section-header">
+          <p class="section-header__label">Applications</p>
+          <h2 class="section-header__title">Real-World Use Cases</h2>
+        </header>
+
+        <div class="usecases__grid">
+          <article class="usecase-card">
+            <div class="usecase-card__icon">🤖</div>
+            <h3 class="usecase-card__title">Robotics</h3>
+            <p class="usecase-card__desc">Control motors, servos, and sensors to build line-following robots, obstacle-avoiding bots, and robotic arms.</p>
+          </article>
+          <article class="usecase-card">
+            <div class="usecase-card__icon">🏠</div>
+            <h3 class="usecase-card__title">Home Automation</h3>
+            <p class="usecase-card__desc">Build smart switches, automated lighting, temperature monitoring, and relay-controlled appliance systems.</p>
+          </article>
+          <article class="usecase-card">
+            <div class="usecase-card__icon">🌡️</div>
+            <h3 class="usecase-card__title">Weather Station</h3>
+            <p class="usecase-card__desc">Read temperature, humidity, and pressure sensors. Display data on LCD screens or log to SD cards.</p>
+          </article>
+          <article class="usecase-card">
+            <div class="usecase-card__icon">🎓</div>
+            <h3 class="usecase-card__title">Education</h3>
+            <p class="usecase-card__desc">Learn programming fundamentals, electronics, and embedded systems in universities and maker workshops.</p>
+          </article>
+          <article class="usecase-card">
+            <div class="usecase-card__icon">🎵</div>
+            <h3 class="usecase-card__title">Audio & LED Projects</h3>
+            <p class="usecase-card__desc">Create LED matrix displays, music visualizers, and interactive light installations using PWM outputs.</p>
+          </article>
+          <article class="usecase-card">
+            <div class="usecase-card__icon">🌱</div>
+            <h3 class="usecase-card__title">Plant Monitoring</h3>
+            <p class="usecase-card__desc">Build automatic watering systems using soil moisture sensors, pumps, and relay modules.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__text">© 2026 BoardBench — University Project</p>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="comparisons.html">Comparisons</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="Credit.html">Team</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

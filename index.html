@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BoardBench – Compare single-board computers and microcontrollers like Raspberry Pi, Orange Pi, Arduino Uno, and Arduino Nano. Beginner-friendly specs, use cases, and recommendations.">
+  <title>BoardBench — Compare Hardware Components</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon">⚡</span>
+        BoardBench
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="comparisons.html">Comparisons</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="Credit.html">Team</a></li>
+      </ul>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Main Content ========== -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span>📡</span> University Project — Electronics Engineering
+        </div>
+        <h1 class="hero__title">
+          Board<br><span class="highlight">Bench</span>
+        </h1>
+        <p class="hero__subtitle">
+          Explore side-by-side comparisons of popular hardware components.
+          Understand specifications, use cases, and find the best board for your next project.
+        </p>
+        <div class="hero__cta-group">
+          <a href="comparisons.html" class="btn btn--primary">View Comparisons →</a>
+          <a href="details.html" class="btn btn--outline">Deep Dive</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stats__inner">
+        <div class="stats__item">
+          <div class="stats__number">4+</div>
+          <div class="stats__label">Components Compared</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">2</div>
+          <div class="stats__label">Categories Covered</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">10+</div>
+          <div class="stats__label">Specs Analyzed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+      <div class="categories__inner">
+        <header class="section-header">
+          <p class="section-header__label">Explore Categories</p>
+          <h2 class="section-header__title">Choose a Category</h2>
+          <p class="section-header__desc">
+            We compare components across two major electronics categories used in education and prototyping.
+          </p>
+        </header>
+
+        <div class="categories__grid">
+
+          <!-- Card: Single Board Computers -->
+          <article class="category-card" onclick="location.href='comparisons.html#sbc'">
+            <div class="category-card__icon category-card__icon--sbc">🖥️</div>
+            <h3 class="category-card__title">Single Board Computers</h3>
+            <p class="category-card__desc">
+              Full Linux-capable computers on a single board. Great for IoT, media centers, and learning Linux.
+            </p>
+            <ul class="category-card__items">
+              <li>Raspberry Pi 4</li>
+              <li>Orange Pi 5</li>
+            </ul>
+            <a href="comparisons.html#sbc" class="category-card__link">
+              Compare Now <span class="arrow">→</span>
+            </a>
+          </article>
+
+          <!-- Card: Microcontrollers -->
+          <article class="category-card" onclick="location.href='comparisons.html#mcu'">
+            <div class="category-card__icon category-card__icon--mcu">🔌</div>
+            <h3 class="category-card__title">Microcontrollers</h3>
+            <p class="category-card__desc">
+              Programmable boards for embedded systems, robotics, sensors, and real-time control applications.
+            </p>
+            <ul class="category-card__items">
+              <li>Arduino Uno</li>
+              <li>Arduino Nano</li>
+            </ul>
+            <a href="comparisons.html#mcu" class="category-card__link">
+              Compare Now <span class="arrow">→</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="features__inner">
+        <header class="section-header">
+          <p class="section-header__label">Why Use This Hub</p>
+          <h2 class="section-header__title">Built for Beginners</h2>
+        </header>
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">📊</div>
+            <h3 class="feature-card__title">Side-by-Side Specs</h3>
+            <p class="feature-card__desc">Easily compare CPU, RAM, GPIO, price, and more in clean tables or cards.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3 class="feature-card__title">Best Choice Badges</h3>
+            <p class="feature-card__desc">We highlight the recommended pick for common use cases to help you decide faster.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">💡</div>
+            <h3 class="feature-card__title">Beginner Friendly</h3>
+            <p class="feature-card__desc">All content is written in plain language so anyone can understand electronics hardware.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">📱</div>
+            <h3 class="feature-card__title">Responsive Design</h3>
+            <p class="feature-card__desc">Works beautifully on phones, tablets, and desktops — study anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__text">© 2026 BoardBench — University Project</p>
+      <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="comparisons.html">Comparisons</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="Credit.html">Team</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
